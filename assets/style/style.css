@@ -1,8 +1,17 @@
-/* font-family: 'Bebas Neue', cursive; */
+/* 
+font-family: 'Bebas Neue', cursive; 
+color : 
+Red Iron Man  : rgb(154, 16, 25);
+Blue Captain America : rgb(68, 104, 174) 
+*/
+
+:root {
+    --blue-width: 50%;
+}
 
 
 /*Généralité*/
-body {
+html, body {
     width: 100%;
     height: 100vh;
     color: #fff;
@@ -14,40 +23,34 @@ header {
     position: relative;
 }
 
+/*TODO Faire en sorte que le titre prenne la couleur en même temps que le background */
 /* .titleRed {
-    color: red;
+    color: rgb(154, 16, 25);
 }
 
 .titleBlue {
-    color: blue;
+    color: rgb(68, 104, 174);
 } */
 
 #banner {
     position: absolute;
     top: 50%;
     left: 50%;
-    /* décalage de 50% de sa propre taille */
+    /* Décalage de 50% de sa propre taille */
     transform: translate(-50%, -50%);
     margin-top: 8rem;
     font-size: 5rem;
 }
 
 /*MAIN*/
-#gameField {
-    display: flex;
-}
-
-.side {
-    width: 50%;
-    height: 100vh;
-}
-
-.blue {
-    background-color: rgb(68, 104, 174);
-}
-
-.red {
+#gameFieldRed {
     background-color: rgb(154, 16, 25);
+}
+
+#blue {
+    background-color: rgb(68, 104, 174);
+    width: var(--blue-width);
+    height: 100vh;
 }
 
 /*FOOTER*/
