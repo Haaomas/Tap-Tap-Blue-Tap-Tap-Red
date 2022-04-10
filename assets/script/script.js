@@ -1,5 +1,6 @@
 //Test de connexion
 console.log("Be water my Friend");
+console.log("-----")
 
 //Beginning of the project
 //Blue side 
@@ -11,10 +12,9 @@ let blueWidth = 50;
 //Event listener
 document.addEventListener("keydown", fight);
 
-//Function
+//width++ or width-- of Blue Side Function 
 function fight(e) {
     let keyClick = e.key;
-    console.log('keyClick', keyClick)
     switch (keyClick) {
         case "q":
             blueWidth = blueWidth + 2.5;
