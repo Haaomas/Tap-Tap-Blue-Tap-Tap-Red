@@ -44,6 +44,7 @@ header {
 /*MAIN*/
 #gameFieldRed {
     background-color: rgb(154, 16, 25);
+    width: 100%;
 }
 
 #blue {
